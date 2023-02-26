@@ -1,0 +1,10 @@
+---
+- hosts: wordpress
+  become: yes
+  remote_user: dflausino
+
+  roles:
+    - server
+    - php
+    - mysql
+    - wordpress
